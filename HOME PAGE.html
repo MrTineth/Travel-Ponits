@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tourist information</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+body {    
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<style>
+  * {   /*Navigation bar style Here*/
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  
+
+  
+  .row {    /*Body Style Here*/
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+  }
+  
+ 
+  .left{
+    -ms-flex: 30%; 
+    flex: 30%;
+    background-color:#272727;
+    padding: 20px;
+    color: white;
+  }
+  
+  
+  .right {   
+    -ms-flex: 70%; 
+    flex: 70%;
+    background-color: #2c2c2c;
+    padding: 20px;
+    color: white;
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  </style>
+  <style>
+    .one{
+  font-family: monospace;
+  font-size: 40px;
+  color: white;
+    }
+  </style>
+  <style>
+    a { /*next button*/
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+      
+    }
+    
+    a:hover {
+      background-color: none;
+      color: black;
+    }
+    
+    .next {
+      background-color: #2F4F4F;
+      color: white;
+      margin-right: -75em;
+    }
+    footer
+    {
+      background-color: #2c2c2c;
+    }
+    
+    /*List style*/
+    ul {
+    list-style:square; 
+    color: red;
+    }
+  </style>
+  <style>
+    div.txt{
+      font-family: fantasy;
+      font-size: 50%;
+    }
+    .tips{
+      font-family: "fantasy","papyrus";
+      font-size: 40px;
+      color:aqua;
+     
+    }
+  
+.rainbow {
+  background-image: linear-gradient(to left,violet,  indigo, blue, green, yellow, orange, red,black);
+  background-clip: text;
+  color: transparent;
+  font-size: 80px;
+  -webkit-background-clip: text;
+  
+}
+a{
+  color: rgb(37, 155, 223);
+}
+h1{
+  color:white;
+}
+.colo{
+  color:coral;
+}
+.bottom{
+  color: white;
+}
+
+  </style>
+  
+<link href="Test.css"rel="stylesheet"type="text/css">
+
+</head>
+<body >
+  <div class="bar">
+    <a class="active" href="HOME PAGE.html">Home</a>
+    <a href="Test1.html">Tourism</a>
+    <a href="Test2.html">Places</a>
+    <a href="Test3.html">Map</a>
+    <a href="Test7.html">Gallery</a>
+    <a href="Test6.html">Do List</a>
+    <a href="Test5.html">Help</a>
+    <a href="Test4.html">About</a>
+    <a href="Test8.html">Contact Us</a>
+    
+    
+  </div>
+  <div class="topic">
+    <img src="images/sri.jpg" alt="Notebook" style="width:100%;">
+    <div class="rule">
+    <center><h1 class="rainbow">Pearl of the Indian Ocean</h1></center>
+    </div>
+    <div class="row">
+      <div class="left">
+        <center><h2 class="one">SRI LANKA</h2></center>
+        
+        <img src="images/sriflag.jpg" width="350"height="200">
+        <center><p><i>The Most Beautiful Island In The World</i></p></center><br>
+       
+         <center><h2>Time Now</h2>
+        <p>Sri Lanka</p></center>
+        
+        <center><h1><div id = "clock" onload="currentTime()"></div></h1></center><br>
+        
+      
+        <center><h3>SIGIRIYA</h3>
+       <p><i>World Heritage</i></p>
+        <img src="images/sigi.jpg" width="300"height="380"></center>
+        <p>The UNESCO World Heritage Site of Sigiriya, often known as 'Lion Rock,' rises over our ecosystem in the distance. Sigiriya, a marvel of the ancient world that is often missed, was erected by King Kasyapa towards the end of the 5th century as a tribute to his mighty reign from a palace in the sky.</p>
+        <br>
+        
+        <center><h3>Provinces & Districts of Sri Lanka.</h3></center>
+        
+          <li>Northern Province
+            <ul>
+              <li>Jaffna</li><br>
+              <li>Kilinochchi</li><br>
+              <li>Mannar</li><br>
+              <li>Vavuniya</li>
+            </ul>
+          </li>
+
+          <li>North Western Province
+            <ul>
+              <li>Puttalam</li><br>
+              <li>Kurunegala</li><br>
+              
+            </ul>
+          </li>
+
+          <li>	Western Province
+            <ul>
+              <li>Gampaha</li><br>
+              <li>Colombo</li><br>
+              <li>Kalutara</li><br>
+            </ul>
+          </li>
+
+          <li>	North Central Province
+            <ul>
+              <li>Anuradhapura</li><br>
+              <li>Polonnaruwa</li><br>
+              
+            </ul>
+          </li>
+
+          <li>Central Province
+            <ul>
+              <li>Matale</li><br>
+              <li>Kandy</li><br>
+              <li>Nuwara Eliya</li><br>
+            </ul>
+          </li>
+
+          <li>Sabaragamuwa Province
+            <ul>
+              <li>Kegalle</li><br>
+              <li>Ratnapura</li><br>
+              
+            </ul>
+          </li>
+
+          <li>Eastern Province
+            <ul>
+              <li>Trincomalee</li><br>
+              <li>Batticaloa</li><br>
+              <li>Ampara</li><br>
+            </ul>
+          </li>
+
+          <li>Uva Province
+            <ul>
+              <li>Badulla</li><br>
+              <li>Monaragala</li><br>
+             
+            </ul>
+          </li>
+          
+          <li>Southern	Province
+            <ul>
+              <li>Hambantota</li><br>
+              <li>Matara</li><br>
+              <li>Galle</li><br>
+            </ul>
+          </li>
+          
+          
+          <br>
+         <center><img src="images/pro.png" width="320"height="400"><br><br></center>
+         
+          <h3>View My Blog Here...</h3>
+         
+          
+          <center><a class="link"href="https://travelinlanka1.blogspot.com/" target="_blank"> <img src="images/myblog.png" width="100" height="100" alt=""></a>
+         </center>
+         <br>
+         <h3>View Google Map Here...</h3>
+        
+         <center><a class="link"href="https://www.google.com/maps/search/tourism+map+sri+lanka/@7.5176995,80.2309469,9z" target="_blank"> <img src="images/mlogo.png" width="100" height="100" alt=""></a>
+         </center><br>
+         
+
+         
+
+         <center><p class="tips">"Travel   &   Find<br> Happiness Within<br> Yourself."</p></center>
+
+         <p>View More Information in SLTDA</p>
+         <a href="https://www.sltda.gov.lk/" target="_blank"><strong>SLTDA</strong></a>
+         
+         
+          
+        
+      </div>
+      <div class="right">
+        <h2>Tourism in Sri Lanka</h2>
+        <h5></h5>
+        
+        <img src="images/rock.jpg" width="900"height="500">
+        <center><p>The Ceylon Tourist Bureau was founded in 1937 as part of the government's efforts to boost tourism. However, due to World War II, it was forced to close in September 1939. Following Sri Lanka's independence, the Ceylon Tourist Board, which took over the duty of the Tourist Bureau, was re-established to promote tourism once again.
+
+          With the Ceylon Tourist Board Act No 10 of 1966 and the Ceylon Hotels Corporation Act No 14 of 1966, which established the Ceylon Tourist Board and the Ceylon Hotels Corporation, J. R. Jayewardene, as Minister of State, launched the first significant expansion of the tourist sector in 1965. Since then, the Ceylon Tourist Board has served as the governmental body in charge of the tourist sector's development and promotion in Sri Lanka. The Ceylon Hotels Corporation cleared the path for government investment in the construction of hotels that are required to attract tourists.</p>
+          </center>
+        <center><h1 class="colo">Attractions</h1></center>
+        
+        <h2>Beaches</h2>
+        <img src="images/sea.jpg" width="900"height="500">
+        <center><p>Sri Lanka has almost 1,600 kilometers (994 miles) of coastline with tropical beaches that are popular with both local and international visitors. Coastal characteristics such as bays, lagoons, sandbanks, and rocky headlands may be found throughout the majority of the country's coasts. Most of these beaches and resort regions provide marine recreation activities such as sea bathing and swimming, surfing, boating, snorkeling, deep-sea fishing, underwater photography, and scuba diving. Tangalle, Beruwala, Mirissa, Bentota, Unawatuna Arugam Bay, Pasikudah, Hikkaduwa, Uppuveli, and Negombo beaches are among the country's most popular tourist destinations.</p>
+        </center><br>
+        <h2>Wildlife</h2>
+        <img src="images/wild.jpg" width="900"height="500">
+        
+        
+        <center><p>Sri Lanka, despite its tiny size, has a high degree of biodiversity and animal resources, and is one of the world's 34 biodiversity hotspots. Sri Lanka is home to a diverse range of flora and animals. As a result, the island now possesses the world's highest rate of biological endemism.
+
+          Due to the presence of five iconic megafauna (The Big Five) and the relative ease of viewing them during a single trip itinerary, Sri Lanka is regarded the greatest destination for big game safaris outside of Africa. Several national parks are home to leopards, Asian elephants, and sloth bears. The leopard population in Yala National Park is one of the greatest in the world. Gehan de Silva Wijeyeratne, a wildlife photographer and author, has proven that Sri Lanka is the finest area in the world to see blue whales.</p>
+          <p>Blue and Sperm whales may swim close to the land near the coast of Mirissa, Sri Lanka, because to a small continental shelf. Minneriya National Park hosts the greatest seasonal assembly of Asian elephants, with numbers ranging from 200 to 300.
+
+            Wildlife Protected Areas (WLPAs) have been recognized over 13% of Sri Lanka's land surface, covering a total area of about 8,500 km2 (3,282 sq mi). National parks cover around 7% of the land, providing opportunities for the public to see and study animals. National parks in Sri Lanka have become famous tourist sites.</p>
+        </center><br>
+        <h2>Heritage</h2>
+        
+        <img src="images/loardbuddh.jpg" width="900"height="500">
+        <center><p>Visiting historical places is part of heritage tourism. Prehistoric, protohistoric, and historic monuments abound in Sri Lanka, evoking the country's old civilization and culture. Buddhism has had a major effect on the country's cultural legacy. The introduction of Buddhism to Sri Lanka by missionaries dispatched by the Indian monarch Asoka begins the history period of Sri Lanka proper around 236 B.C.
+
+          Six archaeological and two biological World Heritage Sites have been designated by UNESCO in the nation.
+          
+          In addition to the world heritage sites, Sri Lanka's government has designated a number of archaeological protected sites and monuments around the nation.</p>
+          </center><br>
+          <h2>Pilgrimage</h2>
+          <img src="images/sripada.jpg" width="900"height="500">
+          <center><p>Sri Lanka is well-known for its diverse Buddhist and other religious cultures. Sri Lanka, as a religious country, has a plethora of religious and historic sites that draw visitors from all over the world. Anuradhapura, the Temple of the Tooth, Adam's Peak, the Shrine of Our Lady of Madhu, and Kataragama are just a few of the island's well-known religious landmarks.
+
+            Pada Yatra, one of Sri Lanka's oldest rituals, has been conducted for generations, with locals from Jaffna traveling along the East Coast to the Kataragama temple.</p>
+            </center>
+     
+      </div>
+    </div>
+    
+   
+    
+     <footer> 
+   <center><a href="Test1.html" class="next">Next Page &raquo;</a></center>
+   <center><p class="bottom">&copy 2022 | Pearl of the Indian Ocean</p></center><br>
+   </footer>
+    
+    
+   <script>
+     function currentTime() {
+    let date = new Date(); 
+    let hour = date.getHours();
+    let minute= date.getMinutes();
+    let second = date.getSeconds();
+    let morning = "AM";
+    if(hour === 0){
+        hour = 12;
+    }
+    if(hour> 12){
+        hour = hour - 12;
+        morning = "PM";
+     }
+  
+     hour = (hour < 10) ? "0" + hour : hour;
+     minute = (minute < 10) ? "0" + minute : minute;
+     second = (second < 10) ? "0" + second : second; 
+     let time = hour + ":" + minute + ":" + second + " " + morning;
+    document.getElementById("clock").innerText = time; 
+    let t = setTimeout(function(){ currentTime() }, 1000);
+  }
+  currentTime();
+   </script>
+   
+   
+      
+</body>
+</html>
